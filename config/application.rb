@@ -24,6 +24,7 @@ module Workspace
     config.active_record.raise_in_transactional_callbacks = true
     
     config.assets.compile = true
+    config.assets.paths << Rails.root.join("assets", "images")
     
     # Generators config
     #config.generators do |g|
