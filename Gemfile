@@ -60,5 +60,6 @@ group :development do
   gem 'spring'
 end
 
+gem 'sprockets_better_errors'
 #gem 'aws-sdk', '~> 2'
 #gem "asset_sync"

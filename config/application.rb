@@ -25,7 +25,8 @@ module Workspace
     
     #config.assets.compile = true
     #config.assets.paths << Rails.root.join("assets", "images")
-    #config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.js *.css *.scss)
+    #config.assets.precompile = ['*.js', '*.css']
     
     # Enable the asset pipeline
     config.assets.enabled = true
