@@ -7,7 +7,7 @@ gem 'rails', '4.2.5'
 
 group :development, :test do
   gem 'sqlite3'#, '1.3.11.pr159'# Use sqlite3 as the database for Active Record
-  gem 'rails_12factor'
+
 end
 
 # Use SCSS for stylesheets
@@ -58,3 +58,4 @@ group :development do
   gem 'spring'
 end
 
+gem 'aws-sdk', '~> 2'
