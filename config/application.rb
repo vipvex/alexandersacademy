@@ -23,8 +23,9 @@ module Workspace
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
     
-    config.assets.compile = true
-    config.assets.paths << Rails.root.join("assets", "images")
+    #config.assets.compile = true
+    #config.assets.paths << Rails.root.join("assets", "images")
+    #config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     
     # Generators config
     #config.generators do |g|
