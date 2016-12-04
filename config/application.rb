@@ -25,12 +25,13 @@ module Workspace
     
     #config.assets.compile = true
     #config.assets.paths << Rails.root.join("assets", "images")
-    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.js *.css *.scss *ico icons/* paper_backgrounds/* wood_backgrounds/*)
-    #config.assets.precompile = ['*.js', '*.css']
     Dir.glob("#{Rails.root}/app/assets/images/**/").each do |path|
       config.assets.paths << path
     end
     
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.js *.css *.scss *ico icons/* paper_backgrounds/* wood_backgrounds/*)
+    #config.assets.precompile = ['*.js', '*.css']
+
     # Enable the asset pipeline
     config.assets.enabled = true
     config.assets.digest = true
