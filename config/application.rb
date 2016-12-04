@@ -29,7 +29,7 @@ module Workspace
       config.assets.paths << path
     end
     
-    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.js *.css *.scss *ico icons/* paper_backgrounds/* wood_backgrounds/*)
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *svg *.js *.css *.scss *ico icons/* paper_backgrounds/* wood_backgrounds/*)
     #config.assets.precompile = ['*.js', '*.css']
 
     # Enable the asset pipeline
