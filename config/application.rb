@@ -25,7 +25,7 @@ module Workspace
     
     #config.assets.compile = true
     #config.assets.paths << Rails.root.join("assets", "images")
-    #config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.js *.css *.scss)
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.js *.css *.scss *ico)
     #config.assets.precompile = ['*.js', '*.css']
     Dir.glob("#{Rails.root}/app/assets/images/**/").each do |path|
       config.assets.paths << path
