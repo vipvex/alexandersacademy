@@ -10,6 +10,8 @@ group :development, :test do
 
 end
 
+gem 'rails_12factor', group: :production
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -58,4 +60,5 @@ group :development do
   gem 'spring'
 end
 
-gem 'aws-sdk', '~> 2'
+#gem 'aws-sdk', '~> 2'
+#gem "asset_sync"

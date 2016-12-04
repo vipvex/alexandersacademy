@@ -27,6 +27,10 @@ module Workspace
     #config.assets.paths << Rails.root.join("assets", "images")
     #config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     
+    # Enable the asset pipeline
+    config.assets.enabled = true
+    config.assets.digest = true
+    
     # Generators config
     #config.generators do |g|
       
