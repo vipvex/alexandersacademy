@@ -1,0 +1,18 @@
+.nav
+  .nav-item
+    %h3
+      = link_to 'ABOUT', root_path
+  .nav-item
+    %h3
+      = link_to 'MISSION', root_path
+  .nav-item.symbol-container
+    = link_to root_path do |a|
+      .name ALEXANDER <br> ACADEMY
+      .symbol
+      - #= image_tag 'logo.svg', class: 'symbol'
+  .nav-item
+    %h3
+      = link_to 'SERVICE', root_path
+  .nav-item
+    %h3
+      = link_to 'BLOG', root_path

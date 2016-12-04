@@ -1,0 +1,711 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require flexboxgrid
+ */
+
+$navTextShadowColor : 0px 2px 1px rgba(0, 0, 0, 0.32);
+$backgroundBlur : 4px;
+$headerColor : #442619;
+$textColor : #442619;
+
+$gold : #ffd88f;
+$dark-blue : #161c4c;
+
+body {
+  overflow: hidden;
+}
+
+html,
+body,
+.page{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 1.063em; // 112.50%; //  // 1.125em; //
+  background-color: #f8f9f4
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+.page-nav {
+  flex: 0 0 auto;
+  background-color: #f8f9f4;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.25);
+  border-top: 2px solid #161c4c;
+  z-index: 999;
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 100%;
+    max-width: 1024px;
+    height: 60px;
+    
+    .nav-item {
+      width: 100%;
+      grow: 1;
+    
+      h3, a {
+        text-align: center;
+        color: $dark-blue;
+        text-shadow: 0px 1px 1px $navTextShadowColor;
+        text-decoration: none;
+        margin-top: 10px;
+        letter-spacing: 1pt;
+      }
+      
+      h1, a:hover {
+        color: $gold;
+        text-decoration: underline;
+      }
+    }
+    
+    .symbol-container {
+      position: relative;
+      text-align: center;
+      background-color: #161c4c;
+      //padding-top: 5px;
+      box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.25);
+      height: 60px;
+      min-width: 156px;
+      max-width: 156px;
+      .name {
+        font-size: 12px;
+        color: $gold;
+        margin-top: 2px;
+      }
+      .symbol {
+        background-image: url(logo.svg);
+        width: 47px;
+        height: 47px;
+        position: absolute;
+        margin: auto;
+        top: 32px;
+        left: 34.5%;
+        background-size: 100%;
+      }
+    }
+    
+    .symbol-container:before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 0; 
+      height: 60px;
+      margin-top: 60px;
+      border-top: 30px solid $dark-blue;
+      border-left: 78px solid transparent; 
+      border-right: 78px solid transparent; 
+    }
+  }
+}
+
+.content-section {
+  position: relative;
+  z-index: 10;
+  padding: 5em 1em 5em 1em;
+}
+
+.learn-to-learn {
+  overflow: hidden;
+  
+  .title {
+    font-size: 350%;
+    color: $dark-blue;
+  }
+  
+  .hook {
+    color: $dark-blue;
+    margin-bottom: 3em;
+    font-size: 125%;
+  }
+  
+  .call-to-action {
+
+  }
+  
+  .content {
+    position: relative;
+    padding: 6em 0 6em 0;
+  }
+}
+
+.learn-to-learn:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
+  display: block;
+  background-image: url(school_of_athenes.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.05);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.centered {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $dark-blue;
+  
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  font-family: 'Crimson Text', serif;
+  font-weight: 500;
+  
+  margin: 0px 0px 0.5em 0px;
+}
+
+button {
+  padding: 1em;
+  font-size: 18px;
+}
+
+.button {
+  display: inline-block;
+  color: rgba(22, 28, 76, 0.8);
+  padding: .8em;
+  margin: 5px;
+  border-radius: -7px;
+  border: 3px solid rgba(22, 28, 76, 0.8);
+  border-radius: 1px;
+  text-decoration: none;
+  font-size: 22px;
+  letter-spacing: 1pt;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.h-list {
+  display: flex;
+  flex-direction: row;
+  
+  .item {
+    margin: 1em;
+  }
+  
+}
+
+.v-list {
+  display: flex;
+  flex-direction: column;
+  
+  .item {
+    margin: 1em;
+  }
+  
+}
+
+p {
+  color: $dark-blue;
+  //font-size: 18px;
+  line-height: 1.45;
+  margin: 0px 0px 2em 0px;
+}
+
+p.short {
+  max-width: 586px;  //778px;
+  margin: 0 auto 1em auto;
+}
+
+.image-25 {
+  width: 25%;
+  padding: 5px;
+  margin: 0 auto 0 auto;
+  img {
+    width: 90%;
+  }
+}
+
+.img-full {
+  padding: 10px;
+  margin: 0 auto 0 auto;
+  
+  img {
+    width: 100%;
+    max-width: 110px;
+  }
+}
+
+.img-text-container {
+  display: flex;
+  flex-direction: row;
+  
+  .image-left {
+    width: 25%;
+    padding: 5px;
+    
+    img {
+      width: 90%;
+    }
+  }
+}
+
+.center-xs {
+  text-align: left !important;
+}
+
+.large {
+  font-size: 125%;
+}
+
+.info-list {
+  margin: 2em 0 2em 0;
+}
+
+.footer {
+  padding: 3em 3em 3em 3em;
+  background-color: $dark-blue;
+  h5 {
+    color: white;  
+  }
+}
+
+form {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin: 5px;
+  font-size: 18px;
+}
+
+input[type="text"], input[type="number"], input[type="email"]{
+  width: 100%;
+  padding: 1em 1em 1em 1em;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #161c4c;
+  margin-bottom: 1em;
+}
+
+input[type="submit"] {
+  
+}
+
+.ceo {
+  width: 50%;
+}
+
+.teaching {
+  overflow: hidden;
+}
+
+.teaching:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
+  display: block;
+  background-color: #f9e5cd;
+  //background-image: url(ku-bigpic.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.05);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.thank-you {
+  overflow: hidden;
+  
+  .title {
+    font-size: 350%;
+    color: $dark-blue;
+  }
+  
+  .hook {
+    color: $dark-blue;
+    margin-bottom: 3em;
+    font-size: 125%;
+  }
+  
+  .call-to-action {
+
+  }
+  
+  .content {
+    position: relative;
+    padding: 6em 0 6em 0;
+  }
+}
+
+.thank-you:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
+  display: block;
+  background-color: #f9e5cd;
+  background-image: url(ku-bigpic.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.05);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.white {
+  color: #efebe6 !important;
+}
+
+.button.white {
+  color: #efebe6 !important;
+  border-color: #efebe6;
+}
+
+
+//.main:before{
+//  content: "";
+//
+//  background-image: url("wood_backgrounds/wood_2.jpg");
+//  background-size: cover;
+//  //transform: rotate(180deg);
+//  
+//  z-index: -1;
+//
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  height: 100%;
+//  width: 100%;
+//}
+//
+//.side-bar {
+//  min-width: 275px;
+//  max-width: 345px;
+//  flex-basis: 345px;
+//  width: 100%;
+//  flex-shrink: 1;
+//  flex-basis: auto;
+//    
+//  z-index: 1;
+//  overflow: hidden;
+//  position: relative;
+//  
+//  padding: 1em;
+//  text-align: center;
+//  border-right: 2px solid #eff8a2;
+//
+//  box-shadow: 5px 0px 38px #3a2e1a;
+//    
+//  display: flex;
+//  flex-direction: column;
+//
+//  .front {
+//    .photo {
+//      width: 36%;
+//      border-radius: 100%;
+//      border: 2px solid $$goldishColor;
+//      box-shadow: 0px 1px 5px rgb(0, 0, 0);
+//    }
+//    
+//    .name {
+//      color: $$goldishColor;
+//      //font-style: italic;
+//      text-shadow: 0px 1px 1px $navTextShadowColor;
+//      margin: 5px 0 5px 0;
+//    }
+//    
+//    .quote {
+//      color: $$goldishColor;
+//      text-shadow: 0px 1px 1px $navTextShadowColor;
+//      
+//      font-style: italic;
+//      background-image: url(paper_backgrounds/scroll_paper.png);
+//      background-size: 100%;
+//      -webkit-filter: drop-shadow(0px 3px 3px black);
+//      filter:         drop-shadow(0px 3px 3px black); 
+//      border-radius: 5px;
+//      
+//      cite {
+//        
+//      }
+//      
+//    }
+//  }
+//  
+//  .scroll {
+//    z-index: 10;
+//    width: 100%;
+//    -webkit-filter: drop-shadow(0px 3px 3px black);
+//    filter:         drop-shadow(0px 3px 3px black);   
+//  }
+//  
+//  .nav-container {
+//    
+//  }
+//  
+//  .nav {
+//    
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//    justify-content: space-around;
+//    
+//    flex-grow: 1;
+//    
+//    width: 66%;
+//    margin: auto;
+//    background-image: url(paper_backgrounds/scroll_paper.png);
+//    background-size: 100% 100%;
+//    -webkit-filter: drop-shadow(0px 3px 3px black);
+//    filter:         drop-shadow(0px 3px 3px black);  
+//    border-radius: 5px;
+//    
+//    h2 {
+//      //border-top: 3px solid $$goldishColor;
+//      //border-bottom: 3px solid $$goldishColor;
+//      width: 100%;
+//    }
+//    
+//    h1, a {
+//      grow: 1;
+//      color: $$goldishColor;
+//      text-shadow: 0px 1px 1px $navTextShadowColor;
+//      text-decoration: none;
+//    }
+//    
+//    .current {
+//      //border-left: 1px solid $gold;
+//    }
+//  }
+//  
+//  nav::before {
+//    
+//  }
+//  
+//  .footer {
+//    max-height: 68px;
+//    display: flex;
+//    flex-direction: row;
+//    align-items: center;
+//    justify-content: space-around;
+//    
+//    align-selft: flex-end;
+//    flex-grow: 1;
+//    
+//    background-image: url(paper_backgrounds/scroll_paper.png);
+//    background-size: 100%;
+//    -webkit-filter: drop-shadow(0px 3px 3px black);
+//    filter:         drop-shadow(0px 3px 3px black); 
+//    border-radius: 5px;
+//
+//    
+//    margin-top: 1em;
+//    
+//    a {
+//      
+//      width: 50px;
+//      height: 50px;
+//      
+//      img {
+//        width: 100%;
+//        //-webkit-filter: invert(100%);
+//      }
+//      
+//    }
+//  }
+//}
+//
+//.linkedin {
+//  background-color: red;
+//  -webkit-mask-image: url("icons/linkedin.svg");
+//  mask-image: url("icons/linkedin.svg");
+//}
+//
+//.flip {
+//  transform: rotate(180deg);
+//}
+//
+//.side-bar:before {
+//  content: "";
+//  
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//  
+//  z-index: -1;
+//  
+//  display: block;
+//  background-image: url('crystal.jpg');
+//  background-position: center; 
+//  transform: scale(1.05);
+//   
+//  -webkit-background-size: cover;
+//  -moz-background-size: cover;
+//  -o-background-size: cover;
+//  background-size: cover; 
+// 
+//  
+//  -webkit-filter: blur($backgroundBlur);
+//  -moz-filter: blur($backgroundBlur);
+//  -o-filter: blur($backgroundBlur);
+//  -ms-filter: blur($backgroundBlur);
+//  filter: blur($backgroundBlur);
+//}
+//
+//
+//
+//.content {
+//  position: relative;
+//
+//  max-width: 778px;
+//  
+//  background-image: url("paper_backgrounds/book.png");
+//  background-size: 100% 100%;
+//  box-shadow:  0px 0px 14px 8px rgba(21, 20, 18, 0.89);
+//}
+//
+//.content-container:before {
+//    content: "";
+//    
+//    position: fixed;
+//    top: 0px;
+//
+//    
+//    height: 100%;
+//    width: 100%;
+//    
+//    box-shadow: 28px 0px 30px -14px #50360F inset;
+//}
+//
+//.content-text {
+//  overflow-y: scroll;
+//  height: 100%;
+//}
+//
+
+//
+////.content-container:after {
+////    content: "";
+////    height: 100%;
+////    width: 100%;
+////    position: absolute;
+////    background-image: url("paper_backgrounds/paper-background.jpg");
+////    translate: scale(1.1);
+////}
+//
+//.content {
+//  padding: 3em 3em 3em 5em;
+//  
+//  .title {
+//  }
+//  
+//  p {
+//    color: $textColor;
+//    //font-size: 18px;
+//    line-height: 1.7;
+//    margin: 0px 0px 1em 0px;
+//  }
+//  
+//  p:not(.centered)::first-letter { 
+//    text-indent: 30px;
+//    float: left;
+//    color: #903;
+//    
+//    font-size: 350%;
+//    line-height: 60px;
+//    padding-top: 4px;
+//    padding-right: 8px;
+//    padding-left: 1em;
+//  }
+//}
+//
+//
+//
+//p::first-line {
+//}
+//
+////p:not(:first-child) {
+////  text-indent: 30px;
+////}
+//
+
+//
+//.section {
+//  border-bottom: 3px solid black;
+//  border-top: 3px solid black;
+//}
+
+
+//.fcontainer {
+//  display: flex;
+//  flex-flow: row wrap;
+//  justify-content: flex-start;
+//}
+//
+//.box {
+//  width: 200px;
+//  height: 200px;
+//  overflow: hidden;
+//}
+//
+//.red{
+//  flex-basis: 20%;
+//  background-color: red;
+//}
+//
+//.blue{
+//  background-color: blue;
+//}
+//
+//.green{
+//  background-color: green;
+//}
+//
+//.yellow{
+//  background-color: yellow;
+//}
