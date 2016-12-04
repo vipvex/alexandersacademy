@@ -1,0 +1,1542 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */
+/* line 27, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+body {
+  overflow: hidden;
+}
+
+/* line 31, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+html,
+body,
+.page {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 1.063em;
+  background-color: #f8f9f4;
+}
+
+/* line 42, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 47, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.page-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+/* line 52, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.page-nav {
+  flex: 0 0 auto;
+  background-color: #f8f9f4;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.25);
+  border-top: 2px solid #161c4c;
+  z-index: 999;
+}
+/* line 61, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.page-nav .nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  width: 100%;
+  max-width: 1024px;
+  height: 60px;
+}
+/* line 71, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.page-nav .nav .nav-item {
+  width: 100%;
+  grow: 1;
+}
+/* line 75, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.page-nav .nav .nav-item h3, .page-nav .nav .nav-item a {
+  text-align: center;
+  color: #161c4c;
+  text-shadow: 0px 1px 1px 0px 2px 1px rgba(0, 0, 0, 0.32);
+  text-decoration: none;
+  margin-top: 10px;
+  letter-spacing: 1pt;
+}
+/* line 84, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.page-nav .nav .nav-item h1, .page-nav .nav .nav-item a:hover {
+  color: #ffd88f;
+  text-decoration: underline;
+}
+/* line 90, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.page-nav .nav .symbol-container {
+  position: relative;
+  text-align: center;
+  background-color: #161c4c;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  height: 60px;
+  min-width: 156px;
+  max-width: 156px;
+}
+/* line 99, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.page-nav .nav .symbol-container .name {
+  font-size: 12px;
+  color: #ffd88f;
+  margin-top: 2px;
+}
+/* line 104, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.page-nav .nav .symbol-container .symbol {
+  background-image: url(logo.svg);
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  margin: auto;
+  top: 32px;
+  left: 34.5%;
+  background-size: 100%;
+}
+/* line 116, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.page-nav .nav .symbol-container:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0;
+  height: 60px;
+  margin-top: 60px;
+  border-top: 30px solid #161c4c;
+  border-left: 78px solid transparent;
+  border-right: 78px solid transparent;
+}
+
+/* line 131, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.content-section {
+  position: relative;
+  z-index: 10;
+  padding: 5em 1em 5em 1em;
+}
+
+/* line 137, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.learn-to-learn {
+  overflow: hidden;
+}
+/* line 140, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.learn-to-learn .title {
+  font-size: 350%;
+  color: #161c4c;
+}
+/* line 145, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.learn-to-learn .hook {
+  color: #161c4c;
+  margin-bottom: 3em;
+  font-size: 125%;
+}
+/* line 155, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.learn-to-learn .content {
+  position: relative;
+  padding: 6em 0 6em 0;
+}
+
+/* line 161, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.learn-to-learn:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
+  display: block;
+  background-image: url(school_of_athenes.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.05);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+/* line 180, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.centered {
+  text-align: center;
+}
+
+/* line 184, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #161c4c;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  font-family: 'Crimson Text', serif;
+  font-weight: 500;
+  margin: 0px 0px 0.5em 0px;
+}
+
+/* line 194, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+button {
+  padding: 1em;
+  font-size: 18px;
+}
+
+/* line 199, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.button {
+  display: inline-block;
+  color: rgba(22, 28, 76, 0.8);
+  padding: .8em;
+  margin: 5px;
+  border-radius: -7px;
+  border: 3px solid rgba(22, 28, 76, 0.8);
+  border-radius: 1px;
+  text-decoration: none;
+  font-size: 22px;
+  letter-spacing: 1pt;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* line 215, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.button:hover {
+  text-decoration: underline;
+}
+
+/* line 219, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.h-list {
+  display: flex;
+  flex-direction: row;
+}
+/* line 223, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.h-list .item {
+  margin: 1em;
+}
+
+/* line 229, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.v-list {
+  display: flex;
+  flex-direction: column;
+}
+/* line 233, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.v-list .item {
+  margin: 1em;
+}
+
+/* line 239, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+p {
+  color: #161c4c;
+  line-height: 1.45;
+  margin: 0px 0px 2em 0px;
+}
+
+/* line 246, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+p.short {
+  max-width: 586px;
+  margin: 0 auto 1em auto;
+}
+
+/* line 251, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.image-25 {
+  width: 25%;
+  padding: 5px;
+  margin: 0 auto 0 auto;
+}
+/* line 255, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.image-25 img {
+  width: 90%;
+}
+
+/* line 260, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.img-full {
+  padding: 10px;
+  margin: 0 auto 0 auto;
+}
+/* line 264, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.img-full img {
+  width: 100%;
+  max-width: 110px;
+}
+
+/* line 270, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.img-text-container {
+  display: flex;
+  flex-direction: row;
+}
+/* line 274, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.img-text-container .image-left {
+  width: 25%;
+  padding: 5px;
+}
+/* line 278, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.img-text-container .image-left img {
+  width: 90%;
+}
+
+/* line 284, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.center-xs {
+  text-align: left !important;
+}
+
+/* line 288, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.large {
+  font-size: 125%;
+}
+
+/* line 292, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.info-list {
+  margin: 2em 0 2em 0;
+}
+
+/* line 296, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.footer {
+  padding: 3em 3em 3em 3em;
+  background-color: #161c4c;
+}
+/* line 299, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.footer h5 {
+  color: white;
+}
+
+/* line 304, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+form {
+  width: 100%;
+}
+
+/* line 308, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+label {
+  display: block;
+  margin: 5px;
+  font-size: 18px;
+}
+
+/* line 314, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+input[type="text"], input[type="number"], input[type="email"] {
+  width: 100%;
+  padding: 1em 1em 1em 1em;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #161c4c;
+  margin-bottom: 1em;
+}
+
+/* line 327, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.ceo {
+  width: 50%;
+}
+
+/* line 331, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.teaching {
+  overflow: hidden;
+}
+
+/* line 335, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.teaching:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
+  display: block;
+  background-color: #f9e5cd;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.05);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+/* line 355, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.thank-you {
+  overflow: hidden;
+}
+/* line 358, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.thank-you .title {
+  font-size: 350%;
+  color: #161c4c;
+}
+/* line 363, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.thank-you .hook {
+  color: #161c4c;
+  margin-bottom: 3em;
+  font-size: 125%;
+}
+/* line 373, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.thank-you .content {
+  position: relative;
+  padding: 6em 0 6em 0;
+}
+
+/* line 379, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.thank-you:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
+  display: block;
+  background-color: #f9e5cd;
+  background-image: url(ku-bigpic.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.05);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+/* line 399, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.white {
+  color: #efebe6 !important;
+}
+
+/* line 403, /home/ubuntu/workspace/app/assets/stylesheets/application.css.scss */
+.button.white {
+  color: #efebe6 !important;
+  border-color: #efebe6;
+}
+/*
+ *
+ * Uncomment and set these variables to customize the grid.
+ *
+ * :root {
+ *  --gutter-width: 1rem;
+ *  --outer-margin: 2rem;
+ *  --gutter-compensation: calc( var( --gutter-width / 2 ) * -1 );
+ *  --half-gutter-width: calc( var( --gutter-width / 2 ) );
+ *  --screen-xs-min: 30em;
+ *  --screen-sm-min: 48em;
+ *  --screen-md-min: 62em;
+ *  --screen-lg-min: 75em;
+ *  --container-sm: calc( 45rem + var( --gutter-width ) );
+ *  --container-md: calc( 60rem + var( --gutter-width ) );
+ *  --container-lg: calc( 70rem + var( --gutter-width ) );
+ * }
+ *
+*/
+
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.row {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+.row.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.col.reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.col-xs,
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-offset-1,
+.col-xs-offset-2,
+.col-xs-offset-3,
+.col-xs-offset-4,
+.col-xs-offset-5,
+.col-xs-offset-6,
+.col-xs-offset-7,
+.col-xs-offset-8,
+.col-xs-offset-9,
+.col-xs-offset-10,
+.col-xs-offset-11,
+.col-xs-offset-12 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.col-xs {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+.col-xs-1 {
+  -webkit-flex-basis: 8.333333333%;
+  -ms-flex-preferred-size: 8.333333333%;
+  flex-basis: 8.333333333%;
+  max-width: 8.333333333%;
+}
+
+.col-xs-2 {
+  -webkit-flex-basis: 16.666666667%;
+  -ms-flex-preferred-size: 16.666666667%;
+  flex-basis: 16.666666667%;
+  max-width: 16.666666667%;
+}
+
+.col-xs-3 {
+  -webkit-flex-basis: 25%;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.col-xs-4 {
+  -webkit-flex-basis: 33.333333333%;
+  -ms-flex-preferred-size: 33.333333333%;
+  flex-basis: 33.333333333%;
+  max-width: 33.333333333%;
+}
+
+.col-xs-5 {
+  -webkit-flex-basis: 41.666666667%;
+  -ms-flex-preferred-size: 41.666666667%;
+  flex-basis: 41.666666667%;
+  max-width: 41.666666667%;
+}
+
+.col-xs-6 {
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.col-xs-7 {
+  -webkit-flex-basis: 58.333333333%;
+  -ms-flex-preferred-size: 58.333333333%;
+  flex-basis: 58.333333333%;
+  max-width: 58.333333333%;
+}
+
+.col-xs-8 {
+  -webkit-flex-basis: 66.666666667%;
+  -ms-flex-preferred-size: 66.666666667%;
+  flex-basis: 66.666666667%;
+  max-width: 66.666666667%;
+}
+
+.col-xs-9 {
+  -webkit-flex-basis: 75%;
+  -ms-flex-preferred-size: 75%;
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.col-xs-10 {
+  -webkit-flex-basis: 83.333333333%;
+  -ms-flex-preferred-size: 83.333333333%;
+  flex-basis: 83.333333333%;
+  max-width: 83.333333333%;
+}
+
+.col-xs-11 {
+  -webkit-flex-basis: 91.666666667%;
+  -ms-flex-preferred-size: 91.666666667%;
+  flex-basis: 91.666666667%;
+  max-width: 91.666666667%;
+}
+
+.col-xs-12 {
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.col-xs-offset-1 {
+  margin-left: 8.333333333%;
+}
+
+.col-xs-offset-2 {
+  margin-left: 16.666666667%;
+}
+
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+.col-xs-offset-4 {
+  margin-left: 33.333333333%;
+}
+
+.col-xs-offset-5 {
+  margin-left: 41.666666667%;
+}
+
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+.col-xs-offset-7 {
+  margin-left: 58.333333333%;
+}
+
+.col-xs-offset-8 {
+  margin-left: 66.666666667%;
+}
+
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+.col-xs-offset-10 {
+  margin-left: 83.333333333%;
+}
+
+.col-xs-offset-11 {
+  margin-left: 91.666666667%;
+}
+
+.start-xs {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.center-xs {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.end-xs {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.top-xs {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.middle-xs {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.bottom-xs {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.around-xs {
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.between-xs {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.first-xs {
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.last-xs {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+@media only screen and (min-width: 48em) {
+  .container {
+    width: 46rem;
+  }
+
+  .col-sm,
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
+  .col-sm-offset-1,
+  .col-sm-offset-2,
+  .col-sm-offset-3,
+  .col-sm-offset-4,
+  .col-sm-offset-5,
+  .col-sm-offset-6,
+  .col-sm-offset-7,
+  .col-sm-offset-8,
+  .col-sm-offset-9,
+  .col-sm-offset-10,
+  .col-sm-offset-11,
+  .col-sm-offset-12 {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .col-sm {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+
+  .col-sm-1 {
+    -webkit-flex-basis: 8.333333333%;
+    -ms-flex-preferred-size: 8.333333333%;
+    flex-basis: 8.333333333%;
+    max-width: 8.333333333%;
+  }
+
+  .col-sm-2 {
+    -webkit-flex-basis: 16.666666667%;
+    -ms-flex-preferred-size: 16.666666667%;
+    flex-basis: 16.666666667%;
+    max-width: 16.666666667%;
+  }
+
+  .col-sm-3 {
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-sm-4 {
+    -webkit-flex-basis: 33.333333333%;
+    -ms-flex-preferred-size: 33.333333333%;
+    flex-basis: 33.333333333%;
+    max-width: 33.333333333%;
+  }
+
+  .col-sm-5 {
+    -webkit-flex-basis: 41.666666667%;
+    -ms-flex-preferred-size: 41.666666667%;
+    flex-basis: 41.666666667%;
+    max-width: 41.666666667%;
+  }
+
+  .col-sm-6 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-sm-7 {
+    -webkit-flex-basis: 58.333333333%;
+    -ms-flex-preferred-size: 58.333333333%;
+    flex-basis: 58.333333333%;
+    max-width: 58.333333333%;
+  }
+
+  .col-sm-8 {
+    -webkit-flex-basis: 66.666666667%;
+    -ms-flex-preferred-size: 66.666666667%;
+    flex-basis: 66.666666667%;
+    max-width: 66.666666667%;
+  }
+
+  .col-sm-9 {
+    -webkit-flex-basis: 75%;
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-sm-10 {
+    -webkit-flex-basis: 83.333333333%;
+    -ms-flex-preferred-size: 83.333333333%;
+    flex-basis: 83.333333333%;
+    max-width: 83.333333333%;
+  }
+
+  .col-sm-11 {
+    -webkit-flex-basis: 91.666666667%;
+    -ms-flex-preferred-size: 91.666666667%;
+    flex-basis: 91.666666667%;
+    max-width: 91.666666667%;
+  }
+
+  .col-sm-12 {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .col-sm-offset-1 {
+    margin-left: 8.333333333%;
+  }
+
+  .col-sm-offset-2 {
+    margin-left: 16.666666667%;
+  }
+
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-sm-offset-4 {
+    margin-left: 33.333333333%;
+  }
+
+  .col-sm-offset-5 {
+    margin-left: 41.666666667%;
+  }
+
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-sm-offset-7 {
+    margin-left: 58.333333333%;
+  }
+
+  .col-sm-offset-8 {
+    margin-left: 66.666666667%;
+  }
+
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-sm-offset-10 {
+    margin-left: 83.333333333%;
+  }
+
+  .col-sm-offset-11 {
+    margin-left: 91.666666667%;
+  }
+
+  .start-sm {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-sm {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-sm {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .top-sm {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .middle-sm {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .bottom-sm {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
+  .around-sm {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .between-sm {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .first-sm {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  .last-sm {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .container {
+    width: 61rem;
+  }
+
+  .col-md,
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-md-offset-1,
+  .col-md-offset-2,
+  .col-md-offset-3,
+  .col-md-offset-4,
+  .col-md-offset-5,
+  .col-md-offset-6,
+  .col-md-offset-7,
+  .col-md-offset-8,
+  .col-md-offset-9,
+  .col-md-offset-10,
+  .col-md-offset-11,
+  .col-md-offset-12 {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .col-md {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+
+  .col-md-1 {
+    -webkit-flex-basis: 8.333333333%;
+    -ms-flex-preferred-size: 8.333333333%;
+    flex-basis: 8.333333333%;
+    max-width: 8.333333333%;
+  }
+
+  .col-md-2 {
+    -webkit-flex-basis: 16.666666667%;
+    -ms-flex-preferred-size: 16.666666667%;
+    flex-basis: 16.666666667%;
+    max-width: 16.666666667%;
+  }
+
+  .col-md-3 {
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-md-4 {
+    -webkit-flex-basis: 33.333333333%;
+    -ms-flex-preferred-size: 33.333333333%;
+    flex-basis: 33.333333333%;
+    max-width: 33.333333333%;
+  }
+
+  .col-md-5 {
+    -webkit-flex-basis: 41.666666667%;
+    -ms-flex-preferred-size: 41.666666667%;
+    flex-basis: 41.666666667%;
+    max-width: 41.666666667%;
+  }
+
+  .col-md-6 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-md-7 {
+    -webkit-flex-basis: 58.333333333%;
+    -ms-flex-preferred-size: 58.333333333%;
+    flex-basis: 58.333333333%;
+    max-width: 58.333333333%;
+  }
+
+  .col-md-8 {
+    -webkit-flex-basis: 66.666666667%;
+    -ms-flex-preferred-size: 66.666666667%;
+    flex-basis: 66.666666667%;
+    max-width: 66.666666667%;
+  }
+
+  .col-md-9 {
+    -webkit-flex-basis: 75%;
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-md-10 {
+    -webkit-flex-basis: 83.333333333%;
+    -ms-flex-preferred-size: 83.333333333%;
+    flex-basis: 83.333333333%;
+    max-width: 83.333333333%;
+  }
+
+  .col-md-11 {
+    -webkit-flex-basis: 91.666666667%;
+    -ms-flex-preferred-size: 91.666666667%;
+    flex-basis: 91.666666667%;
+    max-width: 91.666666667%;
+  }
+
+  .col-md-12 {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.333333333%;
+  }
+
+  .col-md-offset-2 {
+    margin-left: 16.666666667%;
+  }
+
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-md-offset-4 {
+    margin-left: 33.333333333%;
+  }
+
+  .col-md-offset-5 {
+    margin-left: 41.666666667%;
+  }
+
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-md-offset-7 {
+    margin-left: 58.333333333%;
+  }
+
+  .col-md-offset-8 {
+    margin-left: 66.666666667%;
+  }
+
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-md-offset-10 {
+    margin-left: 83.333333333%;
+  }
+
+  .col-md-offset-11 {
+    margin-left: 91.666666667%;
+  }
+
+  .start-md {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-md {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-md {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .top-md {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .middle-md {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .bottom-md {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
+  .around-md {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .between-md {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .first-md {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  .last-md {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .container {
+    width: 71rem;
+  }
+
+  .col-lg,
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12,
+  .col-lg-offset-1,
+  .col-lg-offset-2,
+  .col-lg-offset-3,
+  .col-lg-offset-4,
+  .col-lg-offset-5,
+  .col-lg-offset-6,
+  .col-lg-offset-7,
+  .col-lg-offset-8,
+  .col-lg-offset-9,
+  .col-lg-offset-10,
+  .col-lg-offset-11,
+  .col-lg-offset-12 {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .col-lg {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+
+  .col-lg-1 {
+    -webkit-flex-basis: 8.333333333%;
+    -ms-flex-preferred-size: 8.333333333%;
+    flex-basis: 8.333333333%;
+    max-width: 8.333333333%;
+  }
+
+  .col-lg-2 {
+    -webkit-flex-basis: 16.666666667%;
+    -ms-flex-preferred-size: 16.666666667%;
+    flex-basis: 16.666666667%;
+    max-width: 16.666666667%;
+  }
+
+  .col-lg-3 {
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-lg-4 {
+    -webkit-flex-basis: 33.333333333%;
+    -ms-flex-preferred-size: 33.333333333%;
+    flex-basis: 33.333333333%;
+    max-width: 33.333333333%;
+  }
+
+  .col-lg-5 {
+    -webkit-flex-basis: 41.666666667%;
+    -ms-flex-preferred-size: 41.666666667%;
+    flex-basis: 41.666666667%;
+    max-width: 41.666666667%;
+  }
+
+  .col-lg-6 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-lg-7 {
+    -webkit-flex-basis: 58.333333333%;
+    -ms-flex-preferred-size: 58.333333333%;
+    flex-basis: 58.333333333%;
+    max-width: 58.333333333%;
+  }
+
+  .col-lg-8 {
+    -webkit-flex-basis: 66.666666667%;
+    -ms-flex-preferred-size: 66.666666667%;
+    flex-basis: 66.666666667%;
+    max-width: 66.666666667%;
+  }
+
+  .col-lg-9 {
+    -webkit-flex-basis: 75%;
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-lg-10 {
+    -webkit-flex-basis: 83.333333333%;
+    -ms-flex-preferred-size: 83.333333333%;
+    flex-basis: 83.333333333%;
+    max-width: 83.333333333%;
+  }
+
+  .col-lg-11 {
+    -webkit-flex-basis: 91.666666667%;
+    -ms-flex-preferred-size: 91.666666667%;
+    flex-basis: 91.666666667%;
+    max-width: 91.666666667%;
+  }
+
+  .col-lg-12 {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .col-lg-offset-1 {
+    margin-left: 8.333333333%;
+  }
+
+  .col-lg-offset-2 {
+    margin-left: 16.666666667%;
+  }
+
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-lg-offset-4 {
+    margin-left: 33.333333333%;
+  }
+
+  .col-lg-offset-5 {
+    margin-left: 41.666666667%;
+  }
+
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-lg-offset-7 {
+    margin-left: 58.333333333%;
+  }
+
+  .col-lg-offset-8 {
+    margin-left: 66.666666667%;
+  }
+
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-lg-offset-10 {
+    margin-left: 83.333333333%;
+  }
+
+  .col-lg-offset-11 {
+    margin-left: 91.666666667%;
+  }
+
+  .start-lg {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-lg {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-lg {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .top-lg {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .middle-lg {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .bottom-lg {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
+  .around-lg {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .between-lg {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .first-lg {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  .last-lg {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
